@@ -1,1 +1,65 @@
-/*Style Sheet*/
+body { 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 'regular';
+}
+
+h1 {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 3.625em;
+  text-align: center;
+  margin-top: 268px;
+}
+
+img {
+  height: 65px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 52.2% 47.8%;
+  grid-template-rows: 206px 206px 206px 206px;
+  grid-gap: 1.688em;
+}
+
+.link-input {
+  grid-row: 1/5;
+  background-color: #455A64;
+}
+
+.link-one,
+.link-two,
+.link-three,
+.link-four {
+  background-color: gray;
+}
+
+.web-title,
+.web-url {
+  height: 3.688rem;
+  width: 35.000rem;
+  display: block;
+  margin: 0px auto;
+}
+
+.web-url {
+  margin-top: 68px;
+}
+
+::placeholder {
+  font-size: 2em;
+  color: #c2c0c4;
+}
+
+
+
+.enter-btn {
+  display: block;
+  background-color: #FFC107;
+  color: #FFFFFF;
+  height: 3.125rem;
+  width: 34.813rem;
+  font-size: 2em;
+  margin: 68px auto;
+}
+
