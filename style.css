@@ -1,3 +1,11 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body { 
   font-family: 'Open Sans', sans-serif;
   font-weight: 'regular';
@@ -31,7 +39,60 @@ img {
 .link-two,
 .link-three,
 .link-four {
-  background-color: gray;
+border: 2px solid #607D8B;
+padding: 10px;
+
+}
+
+#Title-card-one {
+  color: #455A64;
+  font-size: 2.2em;
+  border-bottom:2px solid #CFD8DC;
+  margin: 10px;
+  padding-bottom: 10px;
+ /* font-weight: 800;*/
+}
+
+#Url-card-one {
+  color: #607D8B;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  border-bottom: 2px solid #CFD8DC;
+  font-size: 1.5em;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+#Url-card-one:hover, .read-btn-one:hover, .delete-btn-one:hover {
+  text-decoration-color: #FFC107;
+  color: #455A64;
+
+
+}
+
+.read-btn-one {
+  color: #455A64;
+  border: 0;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  font-size: 1.3em;
+  margin: 5px;
+
+
+
+}
+
+.delete-btn-one {
+  color: #455A64;
+  border: 0;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  font-size: 1.3em;
+  float: right;
+  margin: 5px;
+
 }
 
 .web-title,
