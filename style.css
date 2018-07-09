@@ -54,6 +54,10 @@ img {
     border: 2px solid #607D8B;
 }
 
+.red {
+  border: 2px solid red ;
+}
+
 #Title-card-one {
      color: #455A64;
     font-size: 1.7em;
