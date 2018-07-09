@@ -9,14 +9,15 @@
 body { 
   font-family: 'Open Sans', sans-serif;
   font-weight: 'regular';
+  background-color: #CFD8DC;
 }
 
 h1 {
-  color: #FFFFFF;
-  font-weight: 800;
-  font-size: 3.625em;
-  text-align: center;
-  margin-top: 268px;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 4.1rem;
+    text-align: center;
+    margin: 200px 0px 40px 0px;
 }
 
 img {
@@ -25,9 +26,8 @@ img {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 52.2% 47.8%;
-  grid-template-rows: 206px 206px 206px 206px;
-  grid-gap: 1.688em;
+  grid-template-columns: 52% 48%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .link-input {
@@ -39,88 +39,89 @@ img {
 .link-two,
 .link-three,
 .link-four {
-border: 2px solid #607D8B;
-padding: 10px;
-
+    padding: 10px;
+    margin: 27px 27px 0px 27px;
+    background-color: #FFFFFF;
+    height: 10.275rem;
+    border: 2px solid #607D8B;
 }
 
 #Title-card-one {
-  color: #455A64;
-  font-size: 2.2em;
-  border-bottom:2px solid #CFD8DC;
-  margin: 10px;
-  padding-bottom: 10px;
- /* font-weight: 800;*/
+     color: #455A64;
+    font-size: 1.7em;
+    border-bottom: 2px solid #CFD8DC;
+    margin: 5px 5px 0px 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
 }
 
 #Url-card-one {
-  color: #607D8B;
-  text-decoration: underline;
-  text-decoration-color: #F2F4F4;
-  border-bottom: 2px solid #CFD8DC;
-  font-size: 1.5em;
-  margin: 10px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  font-weight: 400;
+     color: #607D8B;
+    text-decoration: underline;
+    text-decoration-color: #F2F4F4;
+    border-bottom: 2px solid #CFD8DC;
+    font-size: 1.3em;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-weight: 400;
 }
 
 #Url-card-one:hover, .read-btn-one:hover, .delete-btn-one:hover {
   text-decoration-color: #FFC107;
   color: #455A64;
-
-
 }
 
 .read-btn-one {
-  color: #455A64;
-  border: 0;
-  text-decoration: underline;
-  text-decoration-color: #F2F4F4;
-  font-size: 1.3em;
-  margin: 5px;
-
-
-
+     color: #455A64;
+    border: 0;
+    text-decoration: underline;
+    text-decoration-color: #F2F4F4;
+    font-size: 1.1em;
+    margin: 5px;
 }
 
 .delete-btn-one {
-  color: #455A64;
-  border: 0;
-  text-decoration: underline;
-  text-decoration-color: #F2F4F4;
-  font-size: 1.3em;
-  float: right;
-  margin: 5px;
-
+      color: #455A64;
+    border: 0;
+    text-decoration: underline;
+    text-decoration-color: #F2F4F4;
+    font-size: 1.1em;
+    margin: 5px;
+    float: right;
 }
 
 .web-title,
 .web-url {
-  height: 3.688rem;
-  width: 35.000rem;
-  display: block;
-  margin: 0px auto;
+    height: 3.1rem;
+    width: 35.000rem;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid #c2c0c4;
+    font-size: 1.6em;
 }
 
 .web-url {
   margin-top: 68px;
 }
 
+
 ::placeholder {
-  font-size: 2em;
+  font-size: 2rem;
   color: #c2c0c4;
+  vertical-align: bottom;
+  
 }
 
-
-
 .enter-btn {
+  border: 0px;
   display: block;
   background-color: #FFC107;
   color: #FFFFFF;
   height: 3.125rem;
   width: 34.813rem;
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 68px auto;
+  font-weight: 800;
 }
 
