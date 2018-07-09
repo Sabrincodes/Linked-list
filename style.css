@@ -25,14 +25,26 @@ img {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 52% 48%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+   background-color: #455A64;
+ /* display: grid;
+  grid-template-columns: 52% 48%;*/
+ 
 }
 
 .link-input {
-  grid-row: 1/5;
-  background-color: #455A64;
+/*  grid-row: 1/5;
+  background-color: #455A64;*/
+}
+
+.link-cards-wrapper {
+  float: right;
+  height: 100%;
+  width: 50%;
+
+
 }
 
 .link-one,
