@@ -25,14 +25,19 @@ img {
 }
 
 .wrapper {
-  display: grid;
+  width: 50%;
+  /*display: grid;
   grid-template-columns: 52% 48%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+*/
 }
 
 .link-input {
-  grid-row: 1/5;
+/*  grid-row: 1/5;*/
   background-color: #455A64;
+}
+.link-cards-wrapper {
+  width: 50%;
 }
 
 .link-one,
