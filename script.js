@@ -7,7 +7,6 @@ var linksCardWrapper = document.querySelector('.link-cards-wrapper');
 var readBtnOne = document.querySelector('.read-btn-one');
 
 
-
 enterBtn.addEventListener('click', grabLinks);
 linksCardWrapper.addEventListener('click', markAsRead);
 
@@ -43,9 +42,16 @@ function markAsRead (event) {
   if(event.target.className === 'read-btn-one' && event.target.parentElement.className === 'link-one') {
     event.target.parentElement.classList.add('red')
   } else {event.target.parentElement.classList.remove('red')}
+
+  if(event.target.className === 'delete-btn-one') {
+    event.target.parentElement.remove()
+  }
 }
- // .classList.add('go')
-     // console.log(event.target.classList)
+
+
+
+
+
 
 
 
