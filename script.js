@@ -40,20 +40,12 @@ function deleteLinks() {
 
 function markAsRead (event) {
   // event.target()
-
-  if(event.target.className === 'read-btn-one') {
+  if(event.target.className === 'read-btn-one' && event.target.parentElement.className === 'link-one') {
     event.target.parentElement.classList.add('red')
-   
-     // .classList.add('go')
+  } else {event.target.parentElement.classList.remove('red')}
+}
+ // .classList.add('go')
      // console.log(event.target.classList)
 
-  }
-  
 
-
-
-
-
-
-}
 
