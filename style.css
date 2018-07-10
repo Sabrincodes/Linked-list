@@ -26,6 +26,7 @@ img {
 
 .wrapper {
   display: inline-block;
+  position: fixed;
   height: 100%;
   width: 50%;
    background-color: #455A64;
