@@ -3,13 +3,13 @@ var webUrl = document.querySelector('.web-url');
 var enterBtn = document.querySelector('.enter-btn');
 var titleCardOne = document.querySelector('#Title-card-one');
 var urlCardOne = document.querySelector('#Url-card-one');
-var listCardsWrapper = document.querySelector('.link-cards-wrapper');
+var linksCardWrapper = document.querySelector('.link-cards-wrapper');
 var readBtnOne = document.querySelector('.read-btn-one');
 
 
 
 enterBtn.addEventListener('click', grabLinks);
-listCardsWrapper.addEventListener('click', markAsRead);
+linksCardWrapper.addEventListener('click', markAsRead);
 
 
 function grabLinks(event) {
@@ -25,7 +25,7 @@ function grabLinks(event) {
     </section>
   `;
 
-  listCardsWrapper.innerHTML += bookMarkCard
+  linksCardWrapper.innerHTML += bookMarkCard
 
   deleteLinks()
 }
