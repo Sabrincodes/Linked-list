@@ -25,6 +25,7 @@ img {
 }
 
 .wrapper {
+<<<<<<< HEAD
   width: 50%;
   /*display: grid;
   grid-template-columns: 52% 48%;
@@ -35,20 +36,42 @@ img {
 .link-input {
 /*  grid-row: 1/5;*/
   background-color: #455A64;
+=======
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+   background-color: #455A64;
+ /* display: grid;
+  grid-template-columns: 52% 48%;*/
+ 
+}
+
+.link-input {
+/*  grid-row: 1/5;
+  background-color: #455A64;*/
+>>>>>>> 185f7e105ea5fde136ced0167fb87f48c3c84aca
 }
 .link-cards-wrapper {
   width: 50%;
 }
 
-.link-one,
-.link-two,
-.link-three,
-.link-four {
+.link-cards-wrapper {
+  float: right;
+  height: 100%;
+  width: 50%;
+
+}
+
+.link-one {
     padding: 10px;
     margin: 27px 27px 0px 27px;
     background-color: #FFFFFF;
     height: 10.275rem;
     border: 2px solid #607D8B;
+}
+
+.red {
+  border: 2px solid red ;
 }
 
 #Title-card-one {
