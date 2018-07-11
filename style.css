@@ -30,6 +30,7 @@ img {
 
 .wrapper {
   display: inline-block;
+  position: fixed;
   height: 100%;
   width: 50%;
    background-color: #455A64;
@@ -110,7 +111,7 @@ img {
 .web-title,
 .web-url {
     height: 3.1rem;
-    width: 35.000rem;
+    width: 90%;
     display: block;
     margin: 0px auto;
     border: 1px solid #c2c0c4;

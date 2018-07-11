@@ -6,24 +6,24 @@ var urlCardOne = document.querySelector('#Url-card-one');
 var linksCardWrapper = document.querySelector('.link-cards-wrapper');
 var readBtnOne = document.querySelector('.read-btn-one');
 var deleteBtn = document.querySelector('.delete-btn-one');
-
+var errorMessage = document.querySelector('.error');
 
 
 enterBtn.addEventListener('click', function(event) {
   event.preventDefault()
-
-  grabLinks()
+  
   returnError()
+  // grabLinks()
 
 });
+
 linksCardWrapper.addEventListener('click', markAsRead);
-// deleteBtn.addEventListener('click', deleteLinkButton)
 
 
 function grabLinks(event) {
   
   var webT = webTitle.value;
-  console.log (webT)
+  // console.log (webT)
   var webU = webUrl.value;
   var bookMarkCard = ` 
     <section class="link-one">
@@ -36,13 +36,14 @@ function grabLinks(event) {
 
   linksCardWrapper.innerHTML += bookMarkCard
 
-  deleteLinks()
+  resetInput()
 }
 
 
-function deleteLinks() { //rename to reset function 
+function resetInput() { //rename to reset function 
   webTitle.value = '';
   webUrl.value = '';
+  errorMessage.innerHTML = ' '
 }
 
 
@@ -50,52 +51,30 @@ function deleteLinks() { //rename to reset function
 function markAsRead (event) {
   // event.target()
   if(event.target.className === 'read-btn-one' && event.target.parentElement.className === 'link-one') {
-  
+    event.target.parentElement.classList.add('red')
+  } else {event.target.parentElement.classList.remove('red')}
 
-  } else { event.target.parentElement.classList.remove('red')
-
-   if(event.target.className === 'delete-btn-one') {
+  if(event.target.className === 'delete-btn-one') {
     event.target.parentElement.remove()
   }
 }
-}
-
 
  function returnError () {
- if (webTitle.value =='' || webUrl.value == '') {
- document.querySelector('.error').innerText = 'Ground control, we have an emergency';
+  var inputLengths = (webUrl.value.length * webTitle.value.length);
+  if (inputLengths === 0){
+    errorMessage.innerHTML = "Please enter a Title and URL"
+  } else { grabLinks()}
+   
   }
-}
+  
 
-
- //    return error
- // }
-
-// If the user omits the title or the URL, the application should not 
-// create the link and should instead display an error.
-
-
-
-
-// function deleteLinkButton(event) {
-//  if (event.target.classList.contains("delete-button")) {
-//    event.target.parentNode.remove();
-//  }
-// }
-
-
-//   if(event.target.parentElement.className === 'delete-btn-one' && event.target.parentElement.className === 'delete-btn-one') {
-//     console.log(event)
-
-//    var linkDad = document.querySelector('link-one')
-// // }
-//   var takeAway = linkDad.removeChild()
-
-
- 
-
-
-
-
+//   function submitEnable() {
+//   var inputLength = (firstNameInput.value.length * nickNameInput.value.length * lastNameInput.value.length);
+//   if (inputLength === 0) {
+//     submitButton.disabled = true;
+//   } else {
+//     submitButton.disabled = false;
+//   };
+// };
 
 
