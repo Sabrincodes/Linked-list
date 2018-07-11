@@ -11,14 +11,13 @@ var errorMessage = document.querySelector('.error');
 
 enterBtn.addEventListener('click', function(event) {
   event.preventDefault()
-  
   returnError()
   // grabLinks()
-
 });
 
 linksCardWrapper.addEventListener('click', markAsRead);
-
+webTitle.addEventListener('keyup', btnDisabled);
+webUrl.addEventListener('keyup', btnDisabled);
 
 function grabLinks(event) {
   
@@ -37,6 +36,7 @@ function grabLinks(event) {
   linksCardWrapper.innerHTML += bookMarkCard
 
   resetInput()
+  btnDisabled()
 }
 
 
@@ -68,13 +68,15 @@ function markAsRead (event) {
   }
   
 
-//   function submitEnable() {
-//   var inputLength = (firstNameInput.value.length * nickNameInput.value.length * lastNameInput.value.length);
-//   if (inputLength === 0) {
-//     submitButton.disabled = true;
-//   } else {
-//     submitButton.disabled = false;
-//   };
-// };
+
+function btnDisabled(event) {
+  if (webTitle.value !== '' && webUrl.value !== '') {
+    enterBtn.disabled = false;
+    console.log('if')
+  } else {
+    enterBtn.disabled = true;
+    console.log('else')
+  }
+}
 
 
