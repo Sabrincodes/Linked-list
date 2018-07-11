@@ -13,7 +13,8 @@ enterBtn.addEventListener('click', function(event) {
   event.preventDefault()
 
   grabLinks()
-  returnError()
+  submitform()
+  // returnError()
 
 });
 linksCardWrapper.addEventListener('click', markAsRead);
@@ -62,10 +63,24 @@ function markAsRead (event) {
 
 
  function returnError () {
- if (webTitle.value =='' || webUrl.value == '') {
+   if (webTitle.value.length == '') {
  document.querySelector('.error').innerText = 'Ground control, we have an emergency';
+
+  //  if (webUrl.value.length < 0) {
+  // document.querySelector('.error').innerText = 'Ground control, we have an emergency';
+  //  }
+  }
+ }
+
+ function submitform() {
+  var f = document.getElementsByTagName('form')[0];
+  if(f.checkValidity()) {
+    f.submit();
+  } else {
+    alert(document.getQuerySelector('example').validationMessage);
   }
 }
+
 
 
  //    return error
