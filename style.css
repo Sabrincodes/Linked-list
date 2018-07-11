@@ -32,7 +32,9 @@ img {
   background-color: #455A64;
   display: inline-block;
   height: 100%;
+  position: fixed;
   width: 50%;
+
  /* display: grid;
   grid-template-columns: 52% 48%;*/
  
@@ -141,24 +143,21 @@ img {
   margin: 10% auto;
   width: 90%;
 }
-/* MEDIA QUERIES*/
-
+/* MEDIA */
 
 @media screen and (max-width: 575px) {
-  body {
-    background: #dccfd3; ; 
+ body {
+   background: #CFD8DC ; 
 }
 
 .wrapper {
-  width: 100%;  
+ width: 100%;
+ position: static;  
 
 }
 
 .link-cards-wrapper {
-  width: 100%;
+ width: 100%;
 
 }
 }
-
-
-
