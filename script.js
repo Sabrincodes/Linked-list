@@ -62,7 +62,7 @@ function markAsRead (event) {
  function returnError () {
   var inputLengths = (webUrl.value.length * webTitle.value.length);
   if (inputLengths === 0){
-    errorMessage.innerHTML = "Please enter a Title and URL"
+    errorMessage.innerHTML = "Please Enter a Title and URL"
   } else { grabLinks()}
    
   }
