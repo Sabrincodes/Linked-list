@@ -11,8 +11,16 @@ var errorMessage = document.querySelector('.error');
 
 enterBtn.addEventListener('click', function(event) {
   event.preventDefault()
+<<<<<<< HEAD
+
+  grabLinks()
+  submitform()
+  // returnError()
+
+=======
   returnError()
   // grabLinks()
+>>>>>>> 8d2293d9f6bdb8f3ace07df3cb2c8140ed6b3b75
 });
 
 linksCardWrapper.addEventListener('click', markAsRead);
@@ -60,6 +68,55 @@ function markAsRead (event) {
 }
 
  function returnError () {
+<<<<<<< HEAD
+   if (webTitle.value.length == '') {
+ document.querySelector('.error').innerText = 'Ground control, we have an emergency';
+
+  //  if (webUrl.value.length < 0) {
+  // document.querySelector('.error').innerText = 'Ground control, we have an emergency';
+  //  }
+  }
+ }
+
+ function submitform() {
+  var f = document.getElementsByTagName('form')[0];
+  if(f.checkValidity()) {
+    f.submit();
+  } else {
+    alert(document.getQuerySelector('example').validationMessage);
+  }
+}
+
+
+
+ //    return error
+ // }
+
+// If the user omits the title or the URL, the application should not 
+// create the link and should instead display an error.
+
+
+
+
+// function deleteLinkButton(event) {
+//  if (event.target.classList.contains("delete-button")) {
+//    event.target.parentNode.remove();
+//  }
+// }
+
+
+//   if(event.target.parentElement.className === 'delete-btn-one' && event.target.parentElement.className === 'delete-btn-one') {
+//     console.log(event)
+
+//    var linkDad = document.querySelector('link-one')
+// // }
+//   var takeAway = linkDad.removeChild()
+
+
+ 
+
+
+=======
   var inputLengths = (webUrl.value.length * webTitle.value.length);
   if (inputLengths === 0){
     errorMessage.innerHTML = "Please Enter a Title and URL"
@@ -67,6 +124,7 @@ function markAsRead (event) {
    
   }
   
+>>>>>>> 8d2293d9f6bdb8f3ace07df3cb2c8140ed6b3b75
 
 
 function btnDisabled(event) {
