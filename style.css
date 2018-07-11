@@ -17,11 +17,14 @@ h1 {
     font-weight: 800;
     font-size: 4.1rem;
     text-align: center;
-    margin: 200px 0px 40px 0px;
+    margin: 27% 0px 5% 0px;
 }
 
 .error {
-  height: 100px;
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+    height: 50px;
 }
 
 img {
@@ -59,8 +62,9 @@ img {
     border: 2px solid #607D8B;
 }
 
-.red {
-  border: 2px solid red ;
+.red .read-btn-one {
+  color: #F05A28;
+  font-weight: 800;
 }
 
 #Title-card-one {
@@ -119,7 +123,7 @@ img {
 }
 
 .web-url {
-  margin-top: 68px;
+  margin-top: 10%;
 }
 
 
@@ -136,9 +140,9 @@ img {
   background-color: #FFC107;
   color: #FFFFFF;
   height: 3.125rem;
-  width: 34.813rem;
+  width: 90%;
   font-size: 1.6em;
-  margin: 68px auto;
+  margin: 10% auto;
   font-weight: 800;
 }
 
