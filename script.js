@@ -6,13 +6,14 @@ var urlCardOne = document.querySelector('#Url-card-one');
 var linksCardWrapper = document.querySelector('.link-cards-wrapper');
 var readBtnOne = document.querySelector('.read-btn-one');
 var deleteBtn = document.querySelector('.delete-btn-one');
+var errorMessage = document.querySelector('.error');
 
 
 enterBtn.addEventListener('click', function(event) {
   event.preventDefault()
-
-  grabLinks()
+  
   returnError()
+  // grabLinks()
 
 });
 
@@ -22,7 +23,7 @@ linksCardWrapper.addEventListener('click', markAsRead);
 function grabLinks(event) {
   
   var webT = webTitle.value;
-  console.log (webT)
+  // console.log (webT)
   var webU = webUrl.value;
   var bookMarkCard = ` 
     <section class="link-one">
@@ -35,13 +36,14 @@ function grabLinks(event) {
 
   linksCardWrapper.innerHTML += bookMarkCard
 
-  deleteLinks()
+  resetInput()
 }
 
 
-function deleteLinks() { //rename to reset function 
+function resetInput() { //rename to reset function 
   webTitle.value = '';
   webUrl.value = '';
+  errorMessage.innerHTML = ' '
 }
 
 
@@ -57,10 +59,22 @@ function markAsRead (event) {
   }
 }
 
-
  function returnError () {
- if (webTitle.value =='' || webUrl.value == '') {
- document.querySelector('.error').innerText = 'Ground control, we have an emergency';
+  var inputLengths = (webUrl.value.length * webTitle.value.length);
+  if (inputLengths === 0){
+    errorMessage.innerHTML = "Please enter a Title and URL"
+  } else { grabLinks()}
+   
   }
-}
+  
+
+//   function submitEnable() {
+//   var inputLength = (firstNameInput.value.length * nickNameInput.value.length * lastNameInput.value.length);
+//   if (inputLength === 0) {
+//     submitButton.disabled = true;
+//   } else {
+//     submitButton.disabled = false;
+//   };
+// };
+
 
