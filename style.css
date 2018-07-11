@@ -16,7 +16,7 @@ h1 {
     color: #FFFFFF;
     font-size: 4.1rem;
     font-weight: 800;
-    margin: 200px 0px 40px 0px;
+    margin-top: 10%;
     text-align: center;
 }
 
@@ -58,8 +58,9 @@ img {
     padding: 10px;
 }
 
-.red {
-  border: 2px solid red ;
+.red .read-btn-one {
+  color: #F05A28;
+  font-weight: 800;
 }
 
 #Title-card-one {
@@ -114,11 +115,11 @@ img {
     font-size: 1.6em;
     height: 3.1rem;
     margin: 0px auto;
-    width: 35.000rem;
+    width: 90%;
 }
 
 .web-url {
-  margin-top: 68px;
+  margin-top: 10%;
 }
 
 
@@ -137,8 +138,27 @@ img {
   font-size: 1.6em;
   font-weight: 800;
   height: 3.125rem;
-  margin: 68px auto;
-  width: 34.813rem;
+  margin: 10% auto;
+  width: 90%;
 }
+/* MEDIA QUERIES*/
+
+
+@media screen and (max-width: 575px) {
+  body {
+    background: #dccfd3; ; 
+}
+
+.wrapper {
+  width: 100%;  
+
+}
+
+.link-cards-wrapper {
+  width: 100%;
+
+}
+}
+
 
 
