@@ -73,14 +73,14 @@ img {
 
 #Url-card-one {
     border-bottom: 2px solid #CFD8DC;
-    font-size: 1.3em;
     color: #607D8B;
-    margin: 10px;
+    font-size: 1.3em;
     font-weight: 400;
+    margin: 10px;
     padding-bottom: 15px;
     padding-top: 5px;
-    text-decoration: underline;
     text-decoration-color: #F2F4F4;
+    text-decoration: underline;
 }
 
 #Url-card-one:hover, .read-btn-one:hover, .delete-btn-one:hover {
@@ -89,8 +89,8 @@ img {
 }
 
 .read-btn-one {
-    color: #455A64;
     border: 0;
+    color: #455A64;
     font-size: 1.1em;
     margin: 5px;
     text-decoration-color: #F2F4F4;
@@ -109,8 +109,8 @@ img {
 
 .web-title,
 .web-url {
-    display: block;
     border: 1px solid #c2c0c4;
+    display: block;
     font-size: 1.6em;
     height: 3.1rem;
     margin: 0px auto;
@@ -141,28 +141,4 @@ img {
   width: 34.813rem;
 }
 
-/*MEDIA QUERIES*/
-/*===========================================*/
-
-  article {
-  height: 200px;
-}
-
-
-aside {
-  heignt: 100px;
-}
-
-@media screen and (max-width: 575px) {
-  body {
-    background: magenta;
-  }
-    article,
-    aside {
-      display:block;
-      width: 100%;
-    }
-
-  }
-}
 
