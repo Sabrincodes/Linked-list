@@ -10,6 +10,13 @@ var readBtnOne = document.querySelector('.read-btn-one');
 enterBtn.addEventListener('click', grabLinks);
 linksCardWrapper.addEventListener('click', markAsRead);
 
+// //
+// function disableEnter() {
+//   if ( webTitle.value=== '' || webURL.value==='') {
+//     enterBtn.setAttribute("disabled", "disabled");
+//   } else {}
+// }
+
 
 function grabLinks(event) {
   event.preventDefault();
