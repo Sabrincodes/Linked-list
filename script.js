@@ -59,5 +59,3 @@ function btnDisabled(event) {
     enterBtn.disabled = true;
   }
 }
-
-
